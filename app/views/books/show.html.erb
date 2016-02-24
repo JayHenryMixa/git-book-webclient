@@ -1,0 +1,10 @@
+<h1>Books Show</h1>
+  
+  
+  <h2><%= @book.title %></h2>
+  <h2><%= @book.author %></h2>
+  <h2><%= @book.publisher %></h2>
+  <h2><%= @book.genre %></h2>
+  <h2><%= @book.isbn %></h2>
+
+  <%= link_to "Delete", "/books/#{@book.id}", method: :delete %>

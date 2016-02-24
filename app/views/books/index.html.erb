@@ -1,0 +1,11 @@
+<h1>Books Index</h1>
+
+  <% @books.each do |book| %>
+    <h2><%= link_to book.title, "/books/#{book.id}" %></h2>
+    <h2><%= book.author %></h2>
+    <h2><%= book.publisher %></h2>
+    <h2><%= book.genre %></h2>
+    <h2><%= book.isbn %></h2>
+   
+
+  <% end %> 

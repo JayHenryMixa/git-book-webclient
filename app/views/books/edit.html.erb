@@ -1,0 +1,27 @@
+<h1>Edit Book</h1>
+
+<%= form_tag '/books', method: :patch do %>
+  <div>
+    <%= label_tag :title %>
+    <%= text_field_tag :title %>
+  </div>
+  <div>
+    <%= label_tag :author %>
+    <%= text_field_tag :author %>
+  </div>
+  <div>
+    <%= label_tag :publisher %>
+    <%= text_field_tag :publisher %>
+  </div>
+  <div>
+    <%= label_tag :genre %>
+    <%= text_field_tag :genre %>
+  </div>
+  <div>
+    <%= label_tag :isbn %>
+    <%= text_field_tag :isbn %>
+  </div>
+
+  <%= submit_tag "Edit Book" %>
+
+<% end %>  
